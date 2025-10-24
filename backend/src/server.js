@@ -29,7 +29,7 @@ app.use(
 app.use(express.json());
 
 // Serve frontend build (when built during deploy)
-const frontendDist = path.join(__dirname, "..", "frontend", "dist");
+const frontendDist = path.join(__dirname, "../../frontend/dist");
 app.use(express.static(frontendDist));
 
 // API routes
